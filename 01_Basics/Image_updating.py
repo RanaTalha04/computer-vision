@@ -16,11 +16,20 @@ print(pixel)
 # Image Croping
 
 crop = image[100:200, 200: 400]
-print(crop)
+print(crop.shape)
 
-# Resizing
+# Image Padding
 
-resized = cv2.resize(image, (650, 450))
+padding = cv2.copyMakeBorder(image, 
+                             top=50, bottom=50, left=50, right=50,
+                             borderType=cv2.BORDER_CONSTANT,
+                             value=[0, 0, 0])
+
+print(padding.shape)
+
+# Resizing and interpolation
+
+resized = cv2.resize(image, (650, 450), interpolation=cv2.INTER_AREA)
 # 650 ---> width and 450 ---> height
 
 cv2.imshow("Reized_image", resized)
