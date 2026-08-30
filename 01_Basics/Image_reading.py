@@ -14,6 +14,7 @@ image = cv2.imread("../images/cat1.jpg")
 
 print(type(image))
 print(image.shape)
+print(image.dtype)
 
 cv2.imshow("Cat Image", image)
 cv2.waitKey(0)
