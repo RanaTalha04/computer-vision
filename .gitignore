@@ -1,10 +1,71 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# ==========================================
+# Computer Vision & Machine Learning Specifics
+# ==========================================
+# Datasets (Never commit raw data images/videos)
+**/datasets/
+**/data/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tiff
+*.mp4
+*.avi
+*.mkv
+*.mov
 
-# Virtual environments
+# Model Weights & Checkpoints (Too large for Git)
+*.weights
+*.h5
+*.pth
+*.pt
+*.onnx
+*.pb
+*.tflite
+*.ckpt
+*.pkl
+*.pickle
+
+# Output & Demos (Annotations, processed frames, logs)
+**/runs/
+**/output/
+**/results/
+*.json
+*.xml
+*.csv
+# Note: Uncomment below if you use label formats like YOLO or PascalVOC text/XML files
+# *.txt
+
+# OpenCV/Cuda Cache
+.nv/
+CudaCache/
+
+# ==========================================
+# Core Python Template
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & Dependencies
+.env
 .venv
+env/
+venv/
+ENV/
+pip-log.txt
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# ==========================================
+# IDEs & Operating Systems
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
