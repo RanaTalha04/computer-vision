@@ -2,3 +2,6 @@ numpy
 notebook
 matplotlib
 opencv-python
+torch 
+torchvision
+torchaudio
