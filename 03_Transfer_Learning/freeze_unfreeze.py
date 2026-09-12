@@ -14,7 +14,7 @@ for param in model.parameters():
     
     
 # Unfreeze params
-for param in model.parameters():
+for param in model.layer4.parameters():
     param.requires_grad = True
     
     
