@@ -41,8 +41,7 @@ cv2.rectangle(
 )
 
 cv2.imshow("Detection: ", image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+
 
 iou = calculate_IoU(person_88, person_86)
 print(f"IoU between the two people's boxes: {iou:.3f}")
